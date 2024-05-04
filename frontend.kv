@@ -30,6 +30,12 @@
             on_press : root.capture()
 
 <RootWidget>:
+    canvas.before:
+        Color: 
+            rgba: (1,1,1,1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
     CameraScreen:
         id: camera_screen
         name: 'camera_screen'
